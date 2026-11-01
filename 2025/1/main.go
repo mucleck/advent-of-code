@@ -56,9 +56,7 @@ func main() {
 			if direction {
 				n = n * -1
 			}
-			fmt.Println(pos, "  ", n)
 			pos = mod((pos + n), 100)
-			fmt.Println(pos)
 			if pos == 0 {
 				password++
 			}
