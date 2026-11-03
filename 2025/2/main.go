@@ -19,7 +19,6 @@ func main() {
 	}
 
 	answer := 0
-
 	var initN, finalN strings.Builder
 	mode := firstNumber
 
@@ -46,7 +45,6 @@ func main() {
 			finalN.WriteByte(b)
 		}
 	}
-	// handle last number
 	answer = answer + processSequence(initN.String(), finalN.String())
 	fmt.Println(answer)
 }
